@@ -3041,6 +3041,31 @@
 
         return $widgets;
     };
+    
+    fn.get_widget = function (col, row) {
+      var ga = this.gridmap;
+      var $res = $();
+
+      if (col) {
+        $res = $res.add(
+            this.$widgets.filter(function () {
+              var tcol = $(this).attr('data-col');
+              return (tcol == col);
+            })
+        );
+      }
+
+      if (row) {
+        $res = $res.filter(function () {
+          var trow = $(this).attr('data-row');
+          return (trow == row);
+        });        
+      }
+      if ($res.length == 1)
+        return $res[0];
+      return undefined;
+    };
+
 
 
     /**
