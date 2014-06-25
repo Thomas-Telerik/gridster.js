@@ -3425,6 +3425,9 @@
      */
     fn.destroy = function(remove) {
         this.$el.removeData('gridster');
+		
+		//remove inline styles
+		this.$el.removeAttr("style");
 
         // remove bound callback on window resize
         $(window).unbind('.gridster');
