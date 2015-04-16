@@ -8,13 +8,6 @@
     "name": "ducksboard",
     "email": "hackers@ducksboard.com"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/ducksboard/gridster.js.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ducksboard/gridster.js/issues"
-  },
   "licenses": [
     {
       "type": "MIT",

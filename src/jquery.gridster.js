@@ -45,7 +45,7 @@
             handle_class: 'gs-resize-handle',
             max_size: [Infinity, Infinity],
             min_size: [1, 1]
-        }
+        },
         style_tag_id_prefix: 'gridster-style-tags-'
     };
 
